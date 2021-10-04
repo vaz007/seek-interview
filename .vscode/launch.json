@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Docker Node.js Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node",
+            "node": {
+                "package": "${workspaceFolder}/node_modules/snapdragon-util/node_modules/kind-of/package.json",
+                "localRoot": "${workspaceFolder}/node_modules/snapdragon-util/node_modules/kind-of"
+            }
+        }
+    ]
+}
