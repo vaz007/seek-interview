@@ -8,10 +8,10 @@ const Direction = {
     WEST: 4
 }
 module.exports = class Robot {
-    constructor() {
+    constructor(boundaries) {
         this.x = 0;
         this.y = 0;
-        this.boundaries = { x: 5, y: 5 };
+        this.boundaries = boundaries;
         this.direction = Direction.NORTH;
         this.placed = false;
     }
